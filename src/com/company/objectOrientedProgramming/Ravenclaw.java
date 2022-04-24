@@ -1,16 +1,13 @@
 package com.company.objectOrientedProgramming;
 
 public class Ravenclaw extends Hogwartz{
-    public String name;
-    public int magic;
-    public int transgression;
     public int reasonableness;
     public int wisdom;
     public int wit;
     public int creation;
 
-    public Ravenclaw (String name, int magic, int transgression, int reasonableness, int wisdom, int wit, int creation){
-        super(name, magic, transgression);
+    public Ravenclaw (String mag, int magic, int transgression, int reasonableness, int wisdom, int wit, int creation){
+        super(mag, magic, transgression);
         this.reasonableness = reasonableness;
         this.wisdom = wisdom;
         this.wit = wit;
@@ -35,7 +32,7 @@ public class Ravenclaw extends Hogwartz{
 
     @Override
     public String toString(){
-        return name +
+        return mag +
                 " - разумность " + reasonableness
                 + ", мудрость " + wisdom
                 + ", остроумие " + wit

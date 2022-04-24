@@ -2,7 +2,7 @@ package com.company;
 
 import com.company.objectOrientedProgramming.*;
 
-public class Main {
+public class Main{
 
     public static void main(String[] args) {
 
@@ -10,7 +10,7 @@ public class Main {
                 new Hogwartz("Гарри Поттер", 80, 80),
                 new Hogwartz("Гермиона Грейнджер", 90, 90),
                 new Hogwartz("Рон Уизли", 60, 40),
-                new Hogwartz("Драко Малфой", 75, 95),
+                new Hogwartz("Драко Малфой", 60, 95),
                 new Hogwartz("Грэхэм Монтегю", 50, 70),
                 new Hogwartz("Грегори Гойл", 50, 65),
                 new Hogwartz("Захария Смит", 60, 50),
@@ -26,6 +26,9 @@ public class Main {
                 new Griffindor("Гермиона Грейнджер", 90, 90, 5, 5, 6),
                 new Griffindor("Рон Уизли", 60, 40, 3, 6, 5)
         };
+
+
+
 
         Slytherin[] slytherins = {
                 new Slytherin("Драко Малфой", 75, 95, 8, 8, 10, 5, 10),
@@ -45,13 +48,20 @@ public class Main {
                 new Ravenclaw("Маркус Белби", 45, 55, 7, 7, 6, 6)
         };
 
+
+
         PrintService printService = new PrintService();
         printService.print(students);
         printService.print(griffindors);
         printService.print(slytherins);
         printService.print(hufflepuffs);
         printService.print(ravenclaws);
-
-
+        PrintService.bestMagOfGriffindor(griffindors);
+        PrintService.bestMagOfSlytherin(slytherins);
+        PrintService.bestMagOfHufflepuff(hufflepuffs);
+        PrintService.bestMagOfRavenclaw(ravenclaws);
+        PrintService.bestMagOfHogwartz(students);
     }
+
+
 }

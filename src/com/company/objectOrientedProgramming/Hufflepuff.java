@@ -1,15 +1,12 @@
 package com.company.objectOrientedProgramming;
 
 public class Hufflepuff extends Hogwartz{
-    public String name;
-    public int magic;
-    public int transgression;
     public int industriousness;
     public int loyalty;
     public int honesty;
 
-    public Hufflepuff (String name, int magic, int transgression, int industriousness, int loyalty, int honesty){
-        super(name, magic, transgression);
+    public Hufflepuff (String mag, int magic, int transgression, int industriousness, int loyalty, int honesty){
+        super(mag, magic, transgression);
         this.industriousness = industriousness;
         this.loyalty = loyalty;
         this.honesty = honesty;
@@ -29,6 +26,6 @@ public class Hufflepuff extends Hogwartz{
 
     @Override
     public String toString(){
-        return name + " - трудолюбивость " + industriousness + ", верность " + loyalty + ", честность " + honesty;
+        return mag + " - трудолюбивость " + industriousness + ", верность " + loyalty + ", честность " + honesty;
     }
 }
