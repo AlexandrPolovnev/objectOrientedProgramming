@@ -1,6 +1,4 @@
-package com.company;
-
-import com.company.objectOrientedProgramming.*;
+package com.company.objectOrientedProgramming;
 
 public class Main{
 
